@@ -2,7 +2,6 @@
 using System.Windows.Forms;
 using Ponto.DataBase;
 using Ponto.Interface;
-using Ponto.Tests;
 
 namespace Ponto
 {
@@ -23,7 +22,6 @@ namespace Ponto
             Application.SetCompatibleTextRenderingDefault(false);
             new BancoDeDados();
             new RegistrationTable();
-            //new TDDRaiz(); descomente para iniciar os testes manuais
             RunApplication.login(true);
         }
     }

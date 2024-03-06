@@ -190,15 +190,6 @@
     <Compile Include="Classes\RecuperacaoDeSenha.cs" />
     <Compile Include="Classes\TratarDados.cs" />
     <Compile Include="Classes\RunApplication.cs" />
-    <Compile Include="Tests\DataStructureTests.cs" />
-    <Compile Include="Tests\TDDRaiz.cs" />
-    <Compile Include="Tests\TestCadastro.cs" />
-    <Compile Include="Tests\TestCadastroAtividade.cs" />
-    <Compile Include="Tests\TestDatas.cs" />
-    <Compile Include="Tests\TestLogin.cs" />
-    <Compile Include="Tests\TestPaginaInicial.cs" />
-    <Compile Include="Tests\TestRedefinirSenha.cs" />
-    <Compile Include="Tests\TestTempoDeAtividade.cs" />
     <EmbeddedResource Include="Interface\atualizar_data.resx">
       <DependentUpon>atualizar_data.cs</DependentUpon>
     </EmbeddedResource>
