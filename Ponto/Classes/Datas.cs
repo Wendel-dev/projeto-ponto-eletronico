@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Ponto.Classes
 {
@@ -12,7 +8,7 @@ namespace Ponto.Classes
         DateTime[] feriados;
         int diasAAdicionar = 0;
         DateTime dataInicial;
-        List<DateTime> checar = new List<DateTime>();
+        static List<DateTime> checar = new List<DateTime>();
         public List<DateTime> diasUteis = new List<DateTime>();
         public int calculateDiasUteis(DateTime dataInicial, DateTime dataFinal)
         {
@@ -29,7 +25,7 @@ namespace Ponto.Classes
             }
             if (dias > 0)
             {
-                while (diasUteis[indexDiasUteis - 1] > dataFinal)
+                while (diasUteis[indexDiasUteis] > dataFinal)
                 {
                     dias--;
                     indexDiasUteis--;

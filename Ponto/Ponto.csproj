@@ -138,9 +138,10 @@
     <Compile Include="DataBase\DefaultTableData.cs" />
     <Compile Include="DataBase\RegistrationTable.cs" />
     <Compile Include="Classes\Datas.cs" />
-    <Compile Include="Controller\LoginController.cs" />
-    <Compile Include="Controller\RedefiniPasswordController.cs" />
-    <Compile Include="Controller\RegistrationController.cs" />
+    <Compile Include="Model\InitialPageModel.cs" />
+    <Compile Include="Model\LoginController.cs" />
+    <Compile Include="Model\RedefiniPasswordController.cs" />
+    <Compile Include="Model\RegistrationController.cs" />
     <Compile Include="Interface\atualizar_data.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +191,7 @@
     <Compile Include="Classes\RecuperacaoDeSenha.cs" />
     <Compile Include="Classes\TratarDados.cs" />
     <Compile Include="Classes\RunApplication.cs" />
+    <Compile Include="teste.cs" />
     <EmbeddedResource Include="Interface\atualizar_data.resx">
       <DependentUpon>atualizar_data.cs</DependentUpon>
     </EmbeddedResource>

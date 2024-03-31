@@ -1,17 +1,10 @@
-﻿using MySql.Data.MySqlClient;
-using Org.BouncyCastle.Utilities;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ponto.Classes;
 using Ponto.DataBase;
-using System.Reflection;
 
 namespace Ponto.Interface
 {
@@ -30,53 +23,6 @@ namespace Ponto.Interface
             inicializarToolStrioItens();
             inicializarComponentes();
         }
-        ~PaginaInicial()
-        {
-            Program.paginaInicial.Close();
-        }
-        /////////////////////////////////////////////////////////////////////////////////////////////////////////
-        public string getTxtAtividade()
-        {
-            return lblHoraAtividade.Text;
-        }
-        public string getTxtBanco()
-        {
-            return lblBancoDeHorasAtividades.Text;
-        }
-        public string getTxtHoraTotal()
-        {
-            return lblHoraTotal.Text;
-        }
-        public void setTxtHoraTotal(string tempo)
-        {
-            lblHoraTotal.Text = tempo;
-        }
-        public void setTxtAtividade(string tempo)
-        {
-            lblHoraAtividade.Text = tempo;
-        }
-        public void setTxtBanco(string tempo)
-        {
-            lblBancoDeHorasAtividades.Text = tempo;
-        }
-        public string testeAtualizarHorarios(String coluna, String tabela, string colunaCondicao, string valorCondicao)
-        {
-            return atualizarHorariosInterface(coluna, tabela, colunaCondicao, valorCondicao);
-        }
-        public void testeComboBox1_SelectedIndexChanged()
-        {
-            comboBox1.SelectedIndex = 2;
-        }
-        public string getComboBox1_SelectedItem()
-        {
-            return comboBox1.SelectedItem.ToString();
-        }
-        public void testebtnAtualizacaoDeDadosAtividade(string tempo)
-        {
-            txtHorasAtividade.Text = tempo;
-            btnIncluirTrabalho_Click(null, null);
-        }
-        /////////////////////////////////////////////////////////////////////////////////////////////////////////
         public void inicializarComponentes()
         {
             lblMes.Text = mes[DateTime.Now.Month - 1];
@@ -226,9 +172,9 @@ namespace Ponto.Interface
                 {
                     AtualizarValores.updateTimeToWork(aData.calculateDiasUteis(dateTimeToWork, data2), ativ);
                 }
-                AtualizarValores.updateDateDataBase(data2, atualizarHoraToal);
+                AtualizarValores.updateDateDataBase(data2);
             }
-
+            if (atualizarHoraToal) AtualizarValores.updateDateWork(data2);
         }
         private String atualizarHorariosInterface(String coluna, String tabela, string colunaCondicao, string valorCondicao)
         {

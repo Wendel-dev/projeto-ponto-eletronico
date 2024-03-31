@@ -8,7 +8,7 @@ namespace Ponto.DataBase
 {
     internal class AtualizarValores
     {
-        public static void updateDateDataBase(DateTime updateDate, bool trabalhoTotal)
+        public static void updateDateDataBase(DateTime updateDate)
         {
             string tabelaBanco = DefaultTableData.getTables(1);
 
@@ -18,7 +18,18 @@ namespace Ponto.DataBase
             string dateUpdate = TratarDados.dataToBD(updateDate);
 
             BancoDeDados.updateBD(tabelaBanco, colunaTabelaBancoData, $"'{dateUpdate}'", colunaTabelaBanco, $"'{DefaultTableData.getColumnValueBancoDeHoras(0)}'");
-            if(trabalhoTotal)BancoDeDados.updateBD(tabelaBanco, colunaTabelaBancoData, $"'{dateUpdate}'", colunaTabelaBanco, $"'{DefaultTableData.getColumnValueBancoDeHoras(1)}'");
+
+        }
+        public static void updateDateWork(DateTime updateDate)
+        {
+            string tabelaBanco = DefaultTableData.getTables(1);
+
+            string colunaTabelaBanco = DefaultTableData.getColumnTablesBancoDeHoras(0);
+            string colunaTabelaBancoData = DefaultTableData.getColumnTablesBancoDeHoras(1);
+
+            string dateUpdate = TratarDados.dataToBD(updateDate);
+
+            BancoDeDados.updateBD(tabelaBanco, colunaTabelaBancoData, $"'{dateUpdate}'", colunaTabelaBanco, $"'{DefaultTableData.getColumnValueBancoDeHoras(1)}'");
 
         }
         public static void updateTimeToWork(int dias, string atividade)

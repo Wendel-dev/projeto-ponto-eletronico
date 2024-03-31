@@ -208,6 +208,6 @@ C:\Users\educa\GitHub\projeto-ponto-eletronico\Ponto\obj\Debug\Ponto.Interface.R
 C:\Users\educa\GitHub\projeto-ponto-eletronico\Ponto\obj\Debug\Ponto.Properties.Resources.resources
 C:\Users\educa\GitHub\projeto-ponto-eletronico\Ponto\obj\Debug\Ponto.csproj.GenerateResource.cache
 C:\Users\educa\GitHub\projeto-ponto-eletronico\Ponto\obj\Debug\Ponto.csproj.CoreCompileInputs.cache
-C:\Users\educa\GitHub\projeto-ponto-eletronico\Ponto\obj\Debug\Ponto.csproj.CopyComplete
 C:\Users\educa\GitHub\projeto-ponto-eletronico\Ponto\obj\Debug\Ponto.exe
 C:\Users\educa\GitHub\projeto-ponto-eletronico\Ponto\obj\Debug\Ponto.pdb
+C:\Users\educa\GitHub\projeto-ponto-eletronico\Ponto\obj\Debug\Ponto.csproj.Up2Date

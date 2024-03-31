@@ -22,7 +22,8 @@ namespace Ponto
             Application.SetCompatibleTextRenderingDefault(false);
             new BancoDeDados();
             new RegistrationTable();
-            RunApplication.login(true);
+            RunApplication.login(true);/*
+            new teste();*/
         }
     }
 }
